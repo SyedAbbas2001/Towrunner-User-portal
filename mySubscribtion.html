@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="sidebar.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-LCbAe7P0H1aDlNz5se6MdD2tUfOshExQpwcm4RfxhKk+tu2eQVgSLjsSbpAl0Ilq60L5w5wT0l+3Zrjh1vYN0Q=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+     <div class="sidebar">
+      <div class="sidebartop">
+        <div class="logo-details">
+          <img src="./assets/arbilogo.png" class="logo" />
+        </div>
+      </div>
+
+      <ul class="nav-links">
+        <li>
+          <div class="profile-details">
+            <div class="profile-content">
+              <img
+                src="https://gravatar.com/avatar/f57bddebd1edf91412d5d68702530099"
+                alt="profileImg"
+              />
+            </div>
+            <div class="name-job">
+              <div class="profile_name">Arbeittech</div>
+              <div class="job">Services</div>
+            </div>
+            <i
+              class="bx bx-log-out"
+              style="text-align: right; margin-left: 30px"
+            ></i>
+          </div>
+        </li>
+        <div class="dashboard_heading logo-details">MAIN</div>
+        <li>
+          <a href="/index.html">
+            <i class="bx bx-grid-alt"></i>
+            <span class="link_name">Dashboard</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Dashboard</a></li>
+          </ul>
+        </li>
+        <div class="dashboard_heading logo-details">Booking Management</div>
+        <li>
+          <div class="iocn-link">
+            <a href="#">
+              <i class="bx bx-collection"></i>
+              <span class="link_name">My Bookings</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">My Bookings</a></li>
+            <li><a href="./bookingRequest.html">My Booking Requests</a></li>
+            <li><a href="./accepted.html">Accepted</a></li>
+            <li><a href="./ongoing.html">Ongoing</a></li>
+            <li><a href="./completed.html">Completed</a></li>
+            <li><a href="./cancelled.html">Canceled</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="/index.html">
+            <i class="fas fa-hard-hat"></i>
+             <span class="link_name">Book a Serviceman</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Book a Serviceman</a></li>
+          </ul>
+        </li>
+        <div class="dashboard_heading logo-details">User Management</div>
+        <li>
+          <a href="updateProfile.html">
+            <i class="bx bx-cog"></i>
+            <span class="link_name">Profile Setting</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Setting</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="/notification.html">
+            <i class="bx bx-bell"></i>
+            <span class="link_name">Notification</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Notiication</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-question-circle"></i>
+            <span class="link_name">Support</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Support</a></li>
+          </ul>
+        </li>
+        <div class="dashboard_heading logo-details">Account Management</div>
+
+        <li>
+          <a href="/payment.html">
+            <i class="bx bx-credit-card"></i>
+            <span class="link_name">Payment</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Payment</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="/wallet.html">
+            <i class="bx bx-wallet"></i>
+            <span class="link_name">Wallet</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Wallet</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="/refer.html">
+            <i class="bx bx-group"></i>
+            <span class="link_name">Refer a Friend</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Refer a Friend</a></li>
+          </ul>
+        </li>
+        
+      </ul>
+    </div>
+
+    <section class="home-section">
+      <div class="top_navbar">
+        <div class="input-box" >
+            <i class="fa fa-search"></i>  
+            <input type="text" class="form-control" placeholder="search here">
+                           
+          </div>
+        <i class="fas fa-comment mx-3"></i>
+        <i class="fas fa-bell mx-3"></i>
+      
+
+
+        <div class="dropdown">
+          <div
+            class="dropdown-toggle avatar"
+            type="button"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <img src="./assets/proav.jpg" />
+          </div>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li>
+              <a class="dropdown-item" href="updateProfile.html"
+                ><i class="fas fa-user"></i>Profile
+              </a>
+            </li>
+          
+            <li>
+              <a class="dropdown-item" href="#">
+                <i class="fas fa-sign-out-alt"></i>
+                Logout</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="updateProfile.html"
+                ><i class="fas fa-cogs"></i> Settings</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="dashboard_pages">
+        <div class="live_activity">
+            <h5>My Subscribtions</h5>
+        </div>
+
+        <div class="other_container">
+          <table class="table recent_trip_table">
+          
+            <tr class="table_header">
+              <th class="center">Sub Category Name</th>
+              <th class="center">Category</th>
+              <th class="center">Services</th>
+              <th class="center">Status</th>
+              <th class="center">Action</th>
+            </tr>
+
+            <tbody>
+           
+              <tr>
+                <td>
+                  <div class="table_content">
+                    <p>Furniture Cleaning Service</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table_content">
+                    <p>House Cleaning</p> 
+                    
+                  </div>
+                </td>
+                <td>
+                  <div class="table_content">
+                    <p>2</p>
+               
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <div class="table_content">
+                     <p>Subscribed</p>
+                       
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="table_content">
+                    <button class="unsub_btn">UNSUBSCRIBE</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="table_content">
+                    <p>Furniture Cleaning Service</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table_content">
+                    <p>House Cleaning</p> 
+                    
+                  </div>
+                </td>
+                <td>
+                  <div class="table_content">
+                    <p>2</p>
+               
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <div class="table_content">
+                     <p>Unsubscribed</p>
+                       
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="table_content">
+                    <button class="sub_btn">SUBSCRIBE</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="table_content">
+                    <p>Furniture Cleaning Service</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table_content">
+                    <p>House Cleaning</p> 
+                    
+                  </div>
+                </td>
+                <td>
+                  <div class="table_content">
+                    <p>2</p>
+               
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <div class="table_content">
+                     <p>Subscribed</p>
+                       
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="table_content">
+                    <button class="unsub_btn">UNSUBSCRIBE</button>
+                  </div>
+                </td>
+              </tr>
+               <tr>
+                <td>
+                  <div class="table_content">
+                    <p>Furniture Cleaning Service</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table_content">
+                    <p>House Cleaning</p> 
+                    
+                  </div>
+                </td>
+                <td>
+                  <div class="table_content">
+                    <p>2</p>
+               
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <div class="table_content">
+                     <p>Subscribed</p>
+                       
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="table_content">
+                    <button class="unsub_btn">UNSUBSCRIBE</button>
+                  </div>
+                </td>
+              </tr> 
+              <tr>
+                <td>
+                  <div class="table_content">
+                    <p>Furniture Cleaning Service</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table_content">
+                    <p>House Cleaning</p> 
+                    
+                  </div>
+                </td>
+                <td>
+                  <div class="table_content">
+                    <p>2</p>
+               
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <div class="table_content">
+                     <p>Subscribed</p>
+                       
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="table_content">
+                    <button class="unsub_btn">UNSUBSCRIBE</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="table_content">
+                    <p>Furniture Cleaning Service</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table_content">
+                    <p>House Cleaning</p> 
+                    
+                  </div>
+                </td>
+                <td>
+                  <div class="table_content">
+                    <p>2</p>
+               
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <div class="table_content">
+                     <p>Subscribed</p>
+                       
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="table_content">
+                    <button class="unsub_btn">UNSUBSCRIBE</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="table_content">
+                    <p>Furniture Cleaning Service</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table_content">
+                    <p>House Cleaning</p> 
+                    
+                  </div>
+                </td>
+                <td>
+                  <div class="table_content">
+                    <p>2</p>
+               
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <div class="table_content">
+                     <p>Unsubscribed</p>
+                       
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="table_content">
+                    <button class="sub_btn">SUBSCRIBE</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="table_content">
+                    <p>Furniture Cleaning Service</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table_content">
+                    <p>House Cleaning</p> 
+                    
+                  </div>
+                </td>
+                <td>
+                  <div class="table_content">
+                    <p>2</p>
+               
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <div class="table_content">
+                     <p>Subscribed</p>
+                       
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="table_content">
+                    <button class="unsub_btn">UNSUBSCRIBE</button>
+                  </div>
+                </td>
+              </tr>
+         
+            </tbody>
+          </table>
+        </div>
+        
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+      let arrow = document.querySelectorAll(".arrow");
+      for (var i = 0; i < arrow.length; i++) {
+        arrow[i].addEventListener("click", (e) => {
+          let arrowParent = e.target.parentElement.parentElement; //selecting main parent of arrow
+          arrowParent.classList.toggle("showMenu");
+        });
+      }
+      let sidebar = document.querySelector(".sidebar");
+      let sidebarBtn = document.querySelector(".bx-menu");
+      console.log(sidebarBtn);
+      sidebarBtn.addEventListener("click", () => {
+        sidebar.classList.toggle("close");
+      });
+    </script>
+    <script>
+      function changeFilter(filter) {
+        // Get all buttons with class "filter_btn"
+        var buttons = document.getElementsByClassName("filter_btn");
+
+        // Remove "active" class from all buttons
+        for (var i = 0; i < buttons.length; i++) {
+          buttons[i].classList.remove("active");
+        }
+
+        // Add "active" class to the clicked button
+        event.currentTarget.classList.add("active");
+
+        // Your logic to handle the selected filter (optional)
+        console.log("Selected filter:", filter);
+      }
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+   
+  </body>
+</html>

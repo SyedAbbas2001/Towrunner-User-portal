@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="sidebar.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-LCbAe7P0H1aDlNz5se6MdD2tUfOshExQpwcm4RfxhKk+tu2eQVgSLjsSbpAl0Ilq60L5w5wT0l+3Zrjh1vYN0Q=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="sidebartop">
+        <div class="logo-details">
+          <img src="https://app.towrunner.com/TowrunnerLogo1.png" class="logo" />
+        </div>
+      </div>
+
+      <ul class="nav-links">
+        <li>
+          <div class="profile-details">
+            <div class="profile-content">
+              <img
+                src="https://gravatar.com/avatar/f57bddebd1edf91412d5d68702530099"
+                alt="profileImg"
+              />
+            </div>
+            <div class="name-job">
+              <div class="profile_name">Towrunner</div>
+              <div class="job">Services</div>
+            </div>
+            <i
+              class="bx bx-log-out"
+              style="text-align: right; margin-left: 30px"
+            ></i>
+          </div>
+        </li>
+        <div class="dashboard_heading logo-details">MAIN</div>
+        <li>
+          <a href="/index.html" >
+            <i class="bx bx-grid-alt"></i>
+            <span class="link_name">Dashboard</span>
+          </a>
+          <ul class="sub-menu blank ">
+            <li><a class="link_name " href="#">Dashboard</a></li>
+          </ul>
+        </li>
+        <div class="dashboard_heading logo-details">Booking Management</div>
+        <li>
+          <div class="iocn-link active" >
+            <a href="#">
+              <i class="bx bx-collection "></i>
+              <span class="link_name">My Bookings</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li ><a class="link_name " href="#">My Bookings</a></li>
+            <li><a href="./bookingRequest.html">My Booking Requests</a></li>
+            <li ><a href="./accepted.html" >Accepted</a></li>
+            <li><a href="./ongoing.html">Ongoing</a></li>
+            <li><a href="./completed.html">Completed</a></li>
+            <li><a href="./cancelled.html">Canceled</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="/index.html">
+            <i class="fas fa-hard-hat"></i>
+             <span class="link_name">Book a Serviceman</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Book a Serviceman</a></li>
+          </ul>
+        </li>
+        <div class="dashboard_heading logo-details">User Management</div>
+        <li>
+          <a href="updateProfile.html">
+            <i class="bx bx-cog"></i>
+            <span class="link_name">Profile Setting</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Setting</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="/notification.html">
+            <i class="bx bx-bell"></i>
+            <span class="link_name">Notification</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Notiication</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-question-circle"></i>
+            <span class="link_name">Support</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Support</a></li>
+          </ul>
+        </li>
+        <div class="dashboard_heading logo-details">Account Management</div>
+
+        <li>
+          <a href="/payment.html">
+            <i class="bx bx-credit-card"></i>
+            <span class="link_name">Payment</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Payment</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="/wallet.html">
+            <i class="bx bx-wallet"></i>
+            <span class="link_name">Wallet</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Wallet</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="/refer.html">
+            <i class="bx bx-group"></i>
+            <span class="link_name">Refer a Friend</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Refer a Friend</a></li>
+          </ul>
+        </li>
+        
+      </ul>
+    </div>
+
+    <section class="home-section">
+      <div class="top_navbar">
+        <div class="input-box">
+          <i class="fa fa-search"></i>
+          <input type="text" class="form-control" placeholder="search here" />
+        </div>
+        <i class="fas fa-comment mx-3"></i>
+        <div type="button" class="position-relative">
+          <i class="fas fa-bell mx-3"></i>
+          <span
+            class="position-absolute top-0 translate-middle badge badge_nav rounded-pill bg-danger"
+          >
+            1+
+          </span>
+        </div>
+
+        <div class="dropdown">
+          <div
+            class="dropdown-toggle avatar"
+            type="button"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <img src="./assets/proav.jpg" />
+          </div>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li>
+              <a class="dropdown-item" href="updateProfile.html"
+                ><i class="fas fa-user"></i>Profile
+              </a>
+            </li>
+
+            <li>
+              <a class="dropdown-item" href="#">
+                <i class="fas fa-sign-out-alt"></i>
+                Logout</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="updateProfile.html"
+                ><i class="fas fa-cogs"></i> Settings</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="dashboard_pages">
+        <div class="live_activity">
+          <div class="card_grid">
+            <div class="info_card1">
+              <div class="info_card_inner">
+                <h3>27970.49$</h3>
+                <p>Total Spend</p>
+              </div>
+              <img src="./assets/total-earning.png" />
+            </div>
+
+            <div class="info_card2">
+              <div class="info_card_inner">
+                <h3>25</h3>
+                <p>Total Completed Jobs</p>
+              </div>
+              <img src="./assets/indexcard2.png" />
+            </div>
+            <div class="info_card3">
+              <div class="info_card_inner">
+                <h3>3</h3>
+                <p>Total Ongoing Jobs</p>
+              </div>
+              <img src="./assets/indexcard3.png" />
+            </div>
+            <div class="info_card4">
+              <div class="info_card_inner">
+                <h3>17</h3>
+                <p>Total cancelled jobs</p>
+              </div>
+              <img src="./assets/indexcard4.png" />
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-9">
+            <div class="other_container">
+              <div class="live_activity" style="margin-top: -5px !important">
+                <span class="dashheading">Spending Statistics</span>
+                <select name="filter" id="filter" class="filter_dropdown">
+                  <option selected value="volvo">2014</option>
+                  <option value="volvo">Pending</option>
+                  <option value="saab">Up Coming</option>
+                  <option value="mercedes">Completed</option>
+                </select>
+
+                <button class="filter_btn" onclick="changeFilter('year')">
+                  Year
+                </button>
+              </div>
+              <div>
+                <canvas id="myChart"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="other_container">
+              <span class="dashheading">Recent Transactions</span>
+              <div class="transaction_container">
+                <i class="bx bx-chevron-up"></i>
+                <p>0 Transactions this month</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row my-3">
+          <div class="col-md-4">
+            <div class="other_container">
+              <div class="row Recent_cont">
+                <div class="col">
+                  <span class="dashheadingnew mx-3">Ongoing jobs</span>
+                </div>
+                <div class="col text-right">
+                  <a href="/ongoing.html"><span class=" ">View All</span></a>
+                </div>
+              </div>
+              <div class="recent_booking_card">
+                <div class="recent_booking_card_first">
+                  <img src="./assets/emptyimg.png" />
+                </div>
+                <div class="recent_booking_card_second">
+                  <h6>Order# 100085</h6>
+                  <p>30-Dec-23 18:52PM</p>
+                </div>
+                <div class="recent_booking_card_third">
+                  <button class="pending">Pending</button>
+                </div>
+              </div>
+              <div class="recent_booking_card">
+                <div class="recent_booking_card_first">
+                  <img src="./assets/emptyimg.png" />
+                </div>
+                <div class="recent_booking_card_second">
+                  <h6>Order# 100085</h6>
+                  <p>30-Dec-23 18:52PM</p>
+                </div>
+                <div class="recent_booking_card_third">
+                  <button class="pending">Pending</button>
+                </div>
+              </div>
+              <div class="recent_booking_card">
+                <div class="recent_booking_card_first">
+                  <img src="./assets/emptyimg.png" />
+                </div>
+                <div class="recent_booking_card_second">
+                  <h6>Order# 100085</h6>
+                  <p>30-Dec-23 18:52PM</p>
+                </div>
+                <div class="recent_booking_card_third">
+                  <button class="pending">Pending</button>
+                </div>
+              </div>
+              <div class="recent_booking_card">
+                <div class="recent_booking_card_first">
+                  <img src="./assets/emptyimg.png" />
+                </div>
+                <div class="recent_booking_card_second">
+                  <h6>Order# 100085</h6>
+                  <p>30-Dec-23 18:52PM</p>
+                </div>
+                <div class="recent_booking_card_third">
+                  <button class="pending">Pending</button>
+                </div>
+              </div>
+              <div class="recent_booking_card">
+                <div class="recent_booking_card_first">
+                  <img src="./assets/emptyimg.png" />
+                </div>
+                <div class="recent_booking_card_second">
+                  <h6>Order# 100085</h6>
+                  <p>30-Dec-23 18:52PM</p>
+                </div>
+                <div class="recent_booking_card_third">
+                  <button class="pending">Pending</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="other_container">
+              <div class="row Recent_cont">
+                <div class="col">
+                  <span class="dashheadingnew mx-3">Completed Jobs</span>
+                </div>
+                <div class="col text-right">
+                  <a href="/accepted.html"><span class=" ">View All</span></a>
+                </div>
+              </div>
+              <div class="subscription_card">
+                <div class="subscription_card_first">
+                  <img src="./assets/subsimg.png" />
+                </div>
+                <div class="subscription_card_second">
+                  <h6>Furniture Cleaning S...</h6>
+                  <p>2 Services</p>
+                </div>
+                <div class="subscription_card_third">
+                  <p>Completed</p>
+                </div>
+              </div>
+              <div class="subscription_card">
+                <div class="subscription_card_first">
+                  <img src="./assets/subsimg.png" />
+                </div>
+                <div class="subscription_card_second">
+                  <h6>Furniture Cleaning S...</h6>
+                  <p>2 Services</p>
+                </div>
+                <div class="subscription_card_third">
+                  <p>Completed</p>
+                </div>
+              </div>
+              <div class="subscription_card">
+                <div class="subscription_card_first">
+                  <img src="./assets/subsimg.png" />
+                </div>
+                <div class="subscription_card_second">
+                  <h6>Furniture Cleaning S...</h6>
+                  <p>2 Services</p>
+                </div>
+                <div class="subscription_card_third">
+                  <p>Completed</p>
+                </div>
+              </div>
+              <div class="subscription_card">
+                <div class="subscription_card_first">
+                  <img src="./assets/subsimg.png" />
+                </div>
+                <div class="subscription_card_second">
+                  <h6>Furniture Cleaning S...</h6>
+                  <p>2 Services</p>
+                </div>
+                <div class="subscription_card_third">
+                  <p>Completed</p>
+                </div>
+              </div>
+              <div class="subscription_card">
+                <div class="subscription_card_first">
+                  <img src="./assets/subsimg.png" />
+                </div>
+                <div class="subscription_card_second">
+                  <h6>Furniture Cleaning S...</h6>
+                  <p>2 Services</p>
+                </div>
+                <div class="subscription_card_third">
+                  <p>Completed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="other_container">
+              <div class="row Recent_cont">
+                <div class="col">
+                  <span class="dashheadingnew">Canceled jobs</span>
+                </div>
+                <div class="col text-right">
+                  <a href="/cancelled.html"><span class=" ">View All</span></a>
+                </div>
+              </div>
+              <div class="recent_booking_card">
+                <div class="recent_booking_card_first">
+                  <img src="./assets/emptyimg.png" />
+                </div>
+                <div class="recent_booking_card_second">
+                  <h6>Order# 100085</h6>
+                  <p>30-Dec-23 18:52PM</p>
+                </div>
+                <div class="recent_booking_card_third">
+                  <button class="unpaid">Cancelled</button>
+                </div>
+              </div>
+              <div class="recent_booking_card">
+                <div class="recent_booking_card_first">
+                  <img src="./assets/emptyimg.png" />
+                </div>
+                <div class="recent_booking_card_second">
+                  <h6>Order# 100085</h6>
+                  <p>30-Dec-23 18:52PM</p>
+                </div>
+                <div class="recent_booking_card_third">
+                  <button class="unpaid">Cancelled</button>
+                </div>
+              </div>
+              <div class="recent_booking_card">
+                <div class="recent_booking_card_first">
+                  <img src="./assets/emptyimg.png" />
+                </div>
+                <div class="recent_booking_card_second">
+                  <h6>Order# 100085</h6>
+                  <p>30-Dec-23 18:52PM</p>
+                </div>
+                <div class="recent_booking_card_third">
+                  <button class="unpaid">Cancelled</button>
+                </div>
+              </div>
+              <div class="recent_booking_card">
+                <div class="recent_booking_card_first">
+                  <img src="./assets/emptyimg.png" />
+                </div>
+                <div class="recent_booking_card_second">
+                  <h6>Order# 100085</h6>
+                  <p>30-Dec-23 18:52PM</p>
+                </div>
+                <div class="recent_booking_card_third">
+                  <button class="unpaid">Cancelled</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      let arrowIcons = document.querySelectorAll(".arrow");
+      let linkNames = document.querySelectorAll(".link_name");
+    
+      // Add event listener for arrow icons
+      for (var i = 0; i < arrowIcons.length; i++) {
+        arrowIcons[i].addEventListener("click", (e) => {
+          let parentLi = e.target.closest("li"); // Find the closest parent li
+          parentLi.classList.toggle("showMenu"); // Toggle the showMenu class for the parent li
+        });
+      }
+    
+      // Add event listener for link names
+      for (var i = 0; i < linkNames.length; i++) {
+        linkNames[i].addEventListener("click", (e) => {
+          let parentLi = e.target.closest("li"); // Find the closest parent li
+          parentLi.classList.toggle("showMenu"); // Toggle the showMenu class for the parent li
+        });
+      }
+    
+      let sidebar = document.querySelector(".sidebar");
+      let sidebarBtn = document.querySelector(".bx-menu ");
+      sidebarBtn.addEventListener("click", () => {
+        sidebar.classList.toggle("close");
+      });
+    </script>
+    <script>
+      function changeFilter(filter) {
+        // Get all buttons with class "filter_btn"
+        var buttons = document.getElementsByClassName("filter_btn");
+
+        // Remove "active" class from all buttons
+        for (var i = 0; i < buttons.length; i++) {
+          buttons[i].classList.remove("active");
+        }
+
+        // Add "active" class to the clicked button
+        event.currentTarget.classList.add("active");
+
+        // Your logic to handle the selected filter (optional)
+        console.log("Selected filter:", filter);
+      }
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+      const ctx = document.getElementById("myChart");
+
+      new Chart(ctx, {
+        type: "line",
+        data: {
+          labels: ["Jan", "Feb", "March", "April", "May", "Jun", "Aug"],
+          datasets: [
+            {
+              label: "# of Votes",
+              data: [12, 19, 3, 5, 2, 3, 6],
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
